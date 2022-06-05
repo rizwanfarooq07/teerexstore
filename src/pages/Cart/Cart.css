@@ -1,0 +1,236 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  min-height: 89vh;
+}
+
+.container {
+  display: flex;
+  flex: 0.7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 89vh;
+  background: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px 0;
+}
+
+.cartContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(230, 227, 227);
+}
+
+.cartContainer > img {
+  height: 100px;
+}
+
+.NoImage {
+  height: 10%;
+}
+
+.cartQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px; */
+}
+
+.detailsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.details > h3 {
+  color: black;
+  background-color: rgb(218, 205, 205);
+  padding: 0;
+}
+
+.details > p {
+  margin: 7px 0 0;
+}
+
+.subTotalContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgb(207, 202, 202);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.subTotalContainer > h1 {
+  text-align: left;
+  margin: 30px;
+  color: rgb(83, 83, 83);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
+}
+
+table {
+  width: 95%;
+  margin-left: 10px;
+  border-bottom: 1px solid rgb(172, 169, 169);
+  border-top: 1px solid rgb(172, 169, 169);
+  padding: 20px 0 15px 0;
+  margin-top: auto;
+}
+
+table > thead > tr > th {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(172, 169, 169);
+
+  /* padding-bottom: 50px; */
+}
+
+table > tbody > tr > td {
+  text-align: center;
+  padding: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.total > p {
+  font-weight: 600;
+  padding: 3px 15px;
+}
+
+.btnCheckout {
+  background-color: black;
+  color: white;
+}
+
+.btn-subcart {
+  display: none;
+}
+
+.btn-subcart > button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.open-cart {
+  display: none;
+}
+.open-cart > button {
+  width: 90%;
+  color: red;
+  margin: 10px 0 0 25px;
+  background: black;
+  color: white;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.deleteIcon {
+  display: none;
+}
+
+.empty {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  right: 0;
+  top: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+@media (max-width: 780px) {
+  .container {
+    flex: 1;
+    border-radius: 20px;
+  }
+  .cartContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+  .detailsContainer {
+    margin: 7px;
+    align-items: center;
+  }
+  .subTotalContainer {
+    display: none;
+  }
+
+  .btn-subcart {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .open-cart {
+    display: block;
+  }
+
+  .deleteIcon {
+    display: block;
+  }
+  .delete {
+    display: none;
+  }
+  .details {
+    align-items: center;
+    justify-content: center;
+  }
+  .details > h2 {
+    text-align: center;
+  }
+}

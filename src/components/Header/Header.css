@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(58, 171, 216);
+  color: white;
+  padding: 0 70px;
+}
+.headerIcon {
+  color: white;
+}

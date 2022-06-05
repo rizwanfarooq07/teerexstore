@@ -1,0 +1,23 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 15px;
+}
+
+.search > input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(221, 212, 212);
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.searchIcon {
+  background-color: rgb(136, 132, 132);
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: whitesmoke;
+}

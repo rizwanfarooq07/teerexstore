@@ -1,0 +1,16 @@
+.homeScreen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10px 0;
+  width: 99%;
+  /* min-height: 75vh; */
+}
+
+.filterIcon {
+  background-color: rgb(43, 40, 40);
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: whitesmoke;
+}
